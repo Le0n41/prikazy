@@ -1,0 +1,110 @@
+
+  .accordion-header {
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 14px;
+      font-family: 'Helvetica Neue OTS', sans-serif;
+      font-weight: 400;
+
+  }
+	.accordion-item {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,125) !important;
+	  border-radius: 3px;
+    margin: 1px;
+	}
+  .accordion-item:first-child {
+    border: 1px solid rgba(0,0,0,125) !important;
+    margin-bottom: 0px;
+	}
+
+	.accordion-button.collapsed{
+      cursor: pointer;
+      border-radius: 3px !important;
+		  border-top-left-radius: 1px solid rgba(0,0,0,125); 
+	}
+
+	.accordion-collapse.collapsing{
+		border-top: 1px solid rgba(0,0,0,125);
+  	}
+	.accordion-collapse.collapse{
+		border-top: 1px solid rgba(0,0,0,125);
+  }
+  .accordion-button:not(.collapsed){
+		color: #1E8EC2 !important;
+		background-color: #E1F3F9 !important;
+		border-radius: 3px !important;
+  }
+
+  .table {
+    background: #ffffff !important;
+    border-collapse: collapse; /* Changed to 'collapse', the original value was 'separate' */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); /* Modified box shadow */
+    font-size: 14px;
+    text-align: left;
+    max-width: 1450px;
+    min-width: 800px;
+    width: 100%; /* Added to ensure the table fills its container */
+  }
+
+.table th,
+    .table td {
+      text-align: center;
+  }
+
+
+.tr:nth-child(odd) .td {
+    background-color: #ffffff !important;
+}
+
+.tr:nth-child(even) .td {
+    background-color: #E1F3F9 !important;
+}
+
+.td:last-child .select {
+    width: 100%; /* Ширина элемента select, чтобы он занимал всю ширину ячейки */
+}
+
+.btn {
+    margin-right: 5px;
+	  margin-left: 5px !important;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+	  display: inline-block;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.btn:hover{
+	text-decoration: underline;
+}
+.dropdown-item1 {
+	background: url(https://cdn-icons-png.flaticon.com/512/8832/8832098.png) 50% 50% no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+.dropdown-item1:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.dropdown-item2 {
+	background: url(https://cdn-icons-png.flaticon.com/512/179/179386.png) 50% 50% no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+.dropdown-item2:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.dropdown-item3 {
+	background: url(https://cdn-icons-png.flaticon.com/512/1159/1159876.png) 50% 50% no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+.dropdown-item3:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
