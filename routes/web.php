@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ControllerPrikazy;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,16 @@ use Illuminate\Support\Facades\Route;
  Route::get('/', function () {
       return view('prikazy');
   });
+
 Route::get('/hello', function(){
     return "hello";
 });
-Route::get('/prikazy', [ControllerPrikazy::class, 'Select_streams_b']);
-Route::post('/prikazy', function () {
-    //return UserController::post();
+// Route::get('/prikazy', [ControllerPrikazy::class, 'get']);
+// Route::post('/prikazy', [ControllerPrikazy::class, 'post']);
+
+Route::get('/prikazy', function(Request $request){
+    return ControllerPrikazy::get($request);
+});
+Route::post('/prikazy', function(Request $request){
+    return ControllerPrikazy::post($request);
 });

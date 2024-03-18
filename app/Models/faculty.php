@@ -10,4 +10,9 @@ class faculty extends Model
     use HasFactory;
     
     protected $table = 'faculty';
+
+    public function profiles()
+    {
+        return $this->hasMany(Profile::class);
+    }
 }
